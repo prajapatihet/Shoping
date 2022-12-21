@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Shopping</string>
+    <string name="first_activity">First Activity</string>
+    <string name="second_activity">Second Activity</string>
+    <string name="registration">Registration</string>
+    <string name="button">Button</string>
+    <string name="log_in">LOG IN</string>
+    <string name="our_image">Our image</string>
+    <string name="enter_your_e_mail_id">Enter your E-mail ID</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="register">Register</string>
+    <string name="emid">Enter your E-mail ID</string>
+    <string name="pass">Enter new Password</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="create_an_account">Create an Account</string>
+    <string name="registers">REGISTER</string>
+    <string name="enter_your_username">Enter your Username</string>
+    <string name="create_a_password">Create a Password</string>
+    <string name="create_your_username">create your Username</string>
+    <string name="buy_now">Buy Now</string>
+    <string name="payment_details">Payment Details</string>
+    <string name="enter_cvv_number">Enter CVV number</string>
+    <string name="enter_account_number">Enter Account number</string>
+    <string name="name_of_account_holder">Name of Account holder</string>
+    <string name="pay_now">Pay Now</string>
+</resources>
