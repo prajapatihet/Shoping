@@ -11,8 +11,9 @@ import android.widget.ListView;
 public class Books extends AppCompatActivity {
 
     ListView listView;
-    Integer[] img = {R.drawable.alchemist,R.drawable.guli,R.drawable.wingsoffire,R.drawable.sh,R.drawable.ei,R.drawable.ga};
+    Integer[] img = {R.drawable.al,R.drawable.guli,R.drawable.wingsoffire,R.drawable.sh,R.drawable.ei,R.drawable.ga};
     String[] nm = {"The Alchemist","Gulliver's Travels","Wings of Fire","Adventures of Sherlock Holmes","Albert Einstein:The Genius Who Failed School","MK Gandhi:The Story of My Experiments with Truth"};
+    String[] pri = {"$50","$20","$15","$10","$30","$25"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +22,7 @@ public class Books extends AppCompatActivity {
 
         listView = findViewById(R.id.list);
 
-        MyListAdapter myListAdapter = new MyListAdapter(this,nm,img);
+        MyListAdapter myListAdapter = new MyListAdapter(this,nm,img,pri);
         listView.setAdapter(myListAdapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -32,6 +33,7 @@ public class Books extends AppCompatActivity {
 
                 intent.putExtra("image",img[i]);
                 intent.putExtra("name",nm[i]);
+                intent.putExtra("price",pri[i]);
 
                 startActivity(intent);
 

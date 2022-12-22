@@ -20,9 +20,10 @@ public class Done extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_done);
+        getSupportActionBar().hide();
 
         new Handler().postDelayed(() -> {
-            Intent intent = new Intent(Done.this, Books.class);
+            Intent intent = new Intent(Done.this, CaregoryActivity.class);
             startActivity(intent);
             finish();
         },SPLASH);

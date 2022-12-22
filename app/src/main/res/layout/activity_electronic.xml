@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Processing">
+    android:background="@drawable/wall"
+    tools:context=".ElectronicActivity">
 
-    <com.airbnb.lottie.LottieAnimationView
+    <ListView
+        android:id="@+id/list2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:lottie_autoPlay="true"
-        app:lottie_loop="true"
-        app:lottie_rawRes="@raw/payterminal"/>
+        />
 
 </RelativeLayout>

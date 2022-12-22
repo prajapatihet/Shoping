@@ -38,10 +38,10 @@ public class LogIn extends AppCompatActivity {
         btnlog.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (username.getText().toString().isEmpty() && password.getText().toString().isEmpty()){
+                if (username.getText().toString().isEmpty() || password.getText().toString().isEmpty()){
                     Toast.makeText(LogIn.this,"Enter Username and Password",Toast.LENGTH_LONG).show();
                 }else if (username.getText().toString().equals("Het") && password.getText().toString().equals("het1234")){
-                    Intent intent = new Intent(LogIn.this, Books.class);
+                    Intent intent = new Intent(LogIn.this, CaregoryActivity.class);
                     startActivity(intent);
 
                     finish();

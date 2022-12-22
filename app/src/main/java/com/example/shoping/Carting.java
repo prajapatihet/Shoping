@@ -19,6 +19,7 @@ public class Carting extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_carting);
+        getSupportActionBar().hide();
 
         new Handler().postDelayed(new Runnable() {
             @Override

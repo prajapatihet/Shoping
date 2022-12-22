@@ -19,6 +19,7 @@ public class Processing extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_processing);
+        getSupportActionBar().hide();
 
         new Handler().postDelayed(new Runnable() {
             @Override
