@@ -27,9 +27,17 @@ public class Payment extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (name.getText().toString().isEmpty() || number.getText().toString().isEmpty() || cvv.getText().toString().isEmpty()){
-                    Toast.makeText(Payment.this, "Enter details", Toast.LENGTH_SHORT).show();
-                } else if(name.getText().toString().equals("Het") && number.getText().toString().equals("123456789125") && cvv.getText().toString().equals("255")) {
+                if (name.getText().toString().isEmpty()){
+                    name.setError("Enter Account Holder Name");
+                    return;
+                }
+                if (number.getText().toString().isEmpty()){
+                    number.setError("Enter your card number");
+                    return;
+                }
+                if(cvv.getText().toString().isEmpty()) {
+                    cvv.setError("Enter CVV number");
+                }else if(name.getText().toString().equals("Het") && number.getText().toString().equals("123456789123") && cvv.getText().toString().equals("255")) {
                     startActivity(new Intent(Payment.this,Processing.class));
                     finish();
                 } else {

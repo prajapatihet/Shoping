@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
+    android:background="@drawable/wallpaper"
     android:padding="5dp"
     tools:context=".CaregoryActivity">
 
@@ -16,7 +17,7 @@
         android:text="Which Category you want to choose?"
         android:textStyle="bold"
         android:textColor="@color/black"
-        android:textSize="23sp"
+        android:textSize="20sp"
         />
 
     <LinearLayout
